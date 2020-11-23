@@ -8,7 +8,10 @@ REQUEST_HEADERS = {
 }
 
 AUTH_URL = 'https://api.tealiumiq.com/v2/auth'
-DLE_URL = 'https://tags.tiqcdn.com/dle/unive/adv-unive-nl/'
+
+def get_dle_url():
+    """Return Live HDL URL"""
+    return f'https://tags.tiqcdn.com/dle/{ACCOUNT}/{PROFILE}/'
 
 def get_api_url():
     """Return Tealium API Base URL"""
