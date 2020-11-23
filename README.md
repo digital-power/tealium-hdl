@@ -1,33 +1,58 @@
-Tealium Hosted Data Layer - Read Me
+# Tealium Hosted Data Layer UI - Read Me
 
-How to start:
+This is a graphical interface in a jupyter notebook to interact with the Tealium Hosted Datalayer API. Features include uploading new datalayers, downloading existing datalayers & deleting datalayers.
 
-Step 1 : Make sure that are you able to use a Notebook Application:
-  Option A:
-  - Download Python and install Python & Pip: (https://www.python.org/downloads/ & https://www.liquidweb.com/kb/install-pip-windows)
-  - !pip install jupyter notebook (in cmd/ terminal)
-  - Install jupyter notebook
+See [this page](https://community.tealiumiq.com/t5/iQ-Tag-Management/About-Hosted-Data-Layer/ta-p/17572) for more general info about the Tealium Hosted Datalayer.
 
-  Option B:
-  - Install Anaconda Navigator and use jupyter notebook from there. (https://docs.anaconda.com/anaconda/navigator/)
-  - Note: This costs more hard disk space then option A!
+## Requirements
 
-Step 2 : Download Tealium HDL files from this repository + Get API key.
-  - Download "notebook_use_tealium_hdl.ipynb"
-  - Download "tealium_hdl_prod.py"
-  - Place files in python directory
-  
-  - Get your API key from Tealium iQ under Edit/View User Settings:
-  API keys are required during authentication when using the Tealium API. 
-  Users with the "Manage Users" permission do not generate keys for users, 
-  they authorize users to generate their own API key and have the ability to revoke existing keys.
-  
-Step 3 : Use model and upload JSON files
-  - Load "notebook_use_tealium_hdl.ipynb" in Notebook Application
-  - Use model to upload files to Tealium HDL.
-  - Make sure that your file names of the uploaded Tealium HDL files are matching a variable / HTML data on your web pages.
-  
-Step 4 : Use Tealium HDL output.
-  - Get example JS query from "get_hdl_data_and_merge_with_utag.js" in this repository.
-  - Add your code in Tealium iQ.
-  - Load a Tealium HDL file by hdl_lookup id and merge that data with the JS code in your utag_data object.
+- Python
+- Pip
+- Virtualenv
+- Tealium API Key
+
+---
+
+## Installation
+
+Create virtualenv folder:
+
+```bash
+python3 -m venv .venv
+```
+
+Activate virtual enviroment:
+
+```bash
+.\.venv\Scripts\activate
+```
+
+Install required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Usage
+
+Start Jupyter notebook by running the below command, and run the first cell in the 'tealium_hdl_ui.ipynb' notebook
+
+```bash
+jupyter notebook
+```
+
+---
+
+## Tealium API Key
+
+Get your API key from Tealium iQ under Edit/View User Settings.
+See this [tealium page](https://community.tealiumiq.com/t5/iQ-Tag-Management/Managing-and-Generating-API-Keys/ta-p/21205) for more info about generating these keys.
+
+---
+
+## Examples
+
+- [Hosted datalayer file](./examples/datalayer-page-1.json)
+- [Hosted datalayer usage in tealium](./examples/enrich_utag_data.js)

@@ -137,5 +137,10 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# VsCode
-.vscode/
+# HDL downloads
+**_hdl_json_downloads/
+**_hdl_master_downloads/
+**_master_split/
+
+# Backups
+backups/
