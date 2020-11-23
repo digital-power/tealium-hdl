@@ -1,0 +1,12 @@
+{
+  "python.pythonPath": ".venv\\Scripts\\python.exe",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintUseMinimalCheckers": false,
+  "python.linting.pylintArgs": [
+    "--disable=C0114,C0115",
+    "--max-line-length=130"
+  ],
+  "editor.detectIndentation": false,
+  "editor.tabSize": 4
+}

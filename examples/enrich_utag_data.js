@@ -1,5 +1,5 @@
 // Set hdl_lookup variable from a specific JS value or meta/html data
-var hdl_lookup = ''
+var hdl_lookup = 'datalayer-page-1'
 
 // Define account variables
 var account =  ''
