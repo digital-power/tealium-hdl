@@ -224,7 +224,7 @@ class UploadMenu:
 
         for file_path in file_paths:
             file_name = file_path.split('\\')[-1]
-            datalayer_id = file_name.replace('.json', '')
+            datalayer_id = file_name.replace('.json', '').lower()
             data = read_json(file_path)
 
             exists = datalayer_exists(datalayer_id)
