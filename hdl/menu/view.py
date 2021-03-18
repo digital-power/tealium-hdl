@@ -105,7 +105,7 @@ class ViewMenu:
                 item.value = True
         else:
             element.description = 'Select All'
-            for item in self.checkbox_boxes.children:
+            for item in self.checkbox_dict.values():
                 item.value = False
 
 
