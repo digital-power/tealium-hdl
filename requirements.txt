@@ -1,4 +1,4 @@
-﻿argon2-cffi==20.1.0
+argon2-cffi==20.1.0
 astroid==2.4.2
 async-generator==1.10
 attrs==20.3.0
@@ -44,7 +44,7 @@ prometheus-client==0.9.0
 prompt-toolkit==3.0.8
 pycodestyle==2.6.0
 pycparser==2.20
-Pygments==2.7.2
+Pygments==2.8.1
 pylint==2.6.0
 pyparsing==2.4.7
 pyrsistent==0.17.3
@@ -61,7 +61,7 @@ testpath==0.4.4
 toml==0.10.2
 tornado==6.1
 traitlets==5.0.5
-urllib3==1.26.3
+urllib3==1.26.4
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.5.1
