@@ -65,7 +65,7 @@ class DeleteMenu:
             [files_list, questions], layout=LAYOUT_DELETE_QUESTION_BOX)
 
         delete_submit_button = widgets.Button(
-            description='Submit',
+            description='Delete',
             style=STYLE_BUTTON,
             button_style='primary',
             layout=LAYOUT_DELETE_BUTTON
